@@ -18,8 +18,8 @@ jobs:
       run:
         working-directory: playground/01-react-test
     steps:
-      - name: Output event data
-        run: echo "${{ toJSON(github.event) }}"
+      # - name: Output event data
+      #   run: echo "${{ toJSON(github.event) }}"
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
