@@ -4,9 +4,19 @@ on:
     types:
       - opened
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "dev-*" # dev-new
+      - "feat/**" # feat/new feat/button
+    paths-ignore:
+      - ".github/workflows/*"
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: playground/01-react-test
     steps:
       - name: Output event data
         run: echo "${{ toJSON(github.event) }}"
