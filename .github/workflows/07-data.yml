@@ -35,7 +35,7 @@ jobs:
         run: npm run build
       - name: Publish JS filename
         id: publish
-        run: find playground/01-react-test/dist/assets/*.js -type f -execdir echo '::set-output name=script-file::{}' ';'
+        run: find dist/assets/*.js -type f -execdir echo '::set-output name=script-file::{}' ';'
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
