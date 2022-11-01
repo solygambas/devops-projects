@@ -24,6 +24,8 @@ jobs:
     defaults:
       run:
         working-directory: playground/01-react-test
+    outputs:
+      script-file: ${{ steps.publish.outputs.script-file }}
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -31,6 +33,9 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+      - name: Publish JS filename
+        id: publish
+        run: find playground/01-react-test/dist/assets/*.js -type f -execdir echo '::set-output name=script-file::{}' ';'
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -43,5 +48,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Get build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist-files
+      - name: Output contents
+        run: ls
+      - name: Output filename
+        run: echo "{{ needs.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
