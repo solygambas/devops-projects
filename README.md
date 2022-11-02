@@ -2,7 +2,11 @@
 
 A quick intro to GitHub Actions.
 
-## Features
+## React Project
+
+[See workflows 1 to 7](.github/workflows)
+
+### Features
 
 - understanding GithHub Actions.
 - finding and customizing actions.
@@ -15,5 +19,16 @@ A quick intro to GitHub Actions.
 - skipping workflows with `[skip ci]` in commit message.
 - working with artifacts and job outputs.
 - caching dependencies.
+
+## Node/Express Project
+
+[See workflow 8](.github/workflows)
+
+### Features
+
+- setting up a MongoDB database on Atlas.
+- using environment variables.
+- using secrets.
+- utilizing job environments.
 
 Based on [Learn GitHub Actions](https://docs.github.com/en/actions/learn-github-actions) by GitHub and [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).

@@ -2,6 +2,8 @@
 
 A quick intro to GitHub Actions.
 
+[See workflows 1 to 7](../../.github/workflows)
+
 ## Features
 
 - running automated tests on a React project.
