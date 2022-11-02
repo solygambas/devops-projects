@@ -11,4 +11,4 @@ A quick intro to GitHub Actions.
 - using secrets.
 - utilizing job environments.
 
-Based [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).
+Based on [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).

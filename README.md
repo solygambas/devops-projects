@@ -4,7 +4,7 @@ A quick intro to GitHub Actions.
 
 ## React Project
 
-[See workflows 1 to 7](.github/workflows)
+[See workflows 1 to 7 and 9](.github/workflows)
 
 ### Features
 
@@ -19,6 +19,9 @@ A quick intro to GitHub Actions.
 - skipping workflows with `[skip ci]` in commit message.
 - working with artifacts and job outputs.
 - caching dependencies.
+- running jobs and steps conditionally.
+- running jobs with a matrix.
+- re-using workflows.
 
 ## Node/Express Project
 
