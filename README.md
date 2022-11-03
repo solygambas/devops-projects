@@ -4,7 +4,7 @@ A quick intro to GitHub Actions.
 
 ## React Project
 
-[See workflows 1 to 7 and 9](.github/workflows)
+[See workflows 1 to 7 and 9 to 11](.github/workflows)
 
 ### Features
 
