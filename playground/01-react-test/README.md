@@ -2,7 +2,7 @@
 
 A quick intro to GitHub Actions.
 
-[See workflows 1 to 7 and 9 to 11](../../.github/workflows)
+[See workflows 1 to 12](../../.github/workflows)
 
 ## Features
 
