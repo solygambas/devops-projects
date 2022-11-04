@@ -1,6 +1,6 @@
 # React Project
 
-A React project to understand how to use GithHub Actions.
+A React project to understand how to use GitHub Actions.
 
 [See workflows 1 to 12](../../.github/workflows)
 

@@ -4,7 +4,7 @@ A quick intro to GitHub Actions.
 
 ## React Project
 
-A React project to understand how to use GithHub Actions.
+A React project to understand how to use GitHub Actions.
 
 [See workflows 1 to 12](.github/workflows)
 
@@ -29,7 +29,7 @@ A React project to understand how to use GithHub Actions.
 
 A Node/Express project using MongoDB, GitHub secrets and Docker.
 
-[See workflow 13](.github/workflows)
+[See workflows 13 & 14](.github/workflows)
 
 ### Features
 

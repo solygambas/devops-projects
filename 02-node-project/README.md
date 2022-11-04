@@ -2,7 +2,7 @@
 
 A Node/Express project using MongoDB, GitHub secrets and Docker.
 
-[See workflow 13](../../.github/workflows)
+[See workflows 13 & 14](../../.github/workflows)
 
 ## Features
 
