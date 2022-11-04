@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     outputs:
       script-file: ${{ steps.publish.outputs.script-file }}
     steps:
@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: playground/01-react-test/dist
+          path: 01-react-project/dist
           # path: |
           #   dist
           #   package.json

@@ -1,6 +1,6 @@
-# Test React
+# React Project
 
-A quick intro to GitHub Actions.
+A React project to understand how to use GithHub Actions.
 
 [See workflows 1 to 12](../../.github/workflows)
 

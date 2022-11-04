@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
         id: cache
         uses: actions/cache@v3
         with:
-          path: playground/01-react-test/node_modules
+          path: 01-react-project/node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -35,7 +35,7 @@ jobs:
         id: cache
         uses: actions/cache@v3
         with:
-          path: playground/01-react-test/node_modules
+          path: 01-react-project/node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
@@ -49,13 +49,13 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: test-report
-          path: playground/01-react-test/test.json
+          path: 01-react-project/test.json
   build:
     needs: test
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -63,7 +63,7 @@ jobs:
         id: cache
         uses: actions/cache@v3
         with:
-          path: playground/01-react-test/node_modules
+          path: 01-react-project/node_modules
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: playground/01-react-test/dist
+          path: 01-react-project/dist
   deploy:
     needs: build
     runs-on: ubuntu-latest

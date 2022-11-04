@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: playground/01-react-test
+        working-directory: 01-react-project
     steps:
       # - name: Output event data
       #   run: echo "${{ toJSON(github.event) }}"
