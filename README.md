@@ -25,6 +25,7 @@ A React project to understand how to use GitHub Actions.
 - running jobs with a matrix.
 - re-using workflows.
 - grouping steps in a custom composite action.
+- adding inputs and outputs to custom actions.
 
 ## Node/Express Project
 

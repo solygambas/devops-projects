@@ -19,5 +19,6 @@ A React project to understand how to use GitHub Actions.
 - running jobs with a matrix.
 - re-using workflows.
 - grouping steps in a custom composite action.
+- adding inputs and outputs to custom actions.
 
 Based on [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).
