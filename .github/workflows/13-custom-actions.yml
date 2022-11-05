@@ -80,7 +80,7 @@ jobs:
           bucket: gha-custom-action-hosting
           dist-folder: 01-react-project/dist
       - name: Output information
-        runs: |
+        run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
   # information:
   #   runs-on: ubuntu-latest
