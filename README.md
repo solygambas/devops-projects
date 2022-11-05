@@ -26,6 +26,7 @@ A React project to understand how to use GitHub Actions.
 - re-using workflows.
 - grouping steps in a custom composite action.
 - adding inputs and outputs to custom actions.
+- creating a custom JavaScript action.
 
 ## Node/Express Project
 
