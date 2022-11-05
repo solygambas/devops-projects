@@ -6,7 +6,7 @@ A quick intro to GitHub Actions.
 
 A React project to understand how to use GitHub Actions.
 
-[See workflows 1 to 12](.github/workflows)
+[See workflows 1 to 13](.github/workflows)
 
 ### Features
 
@@ -24,12 +24,13 @@ A React project to understand how to use GitHub Actions.
 - running jobs and steps conditionally.
 - running jobs with a matrix.
 - re-using workflows.
+- grouping steps in a custom composite action.
 
 ## Node/Express Project
 
 A Node/Express project using MongoDB, GitHub secrets and Docker.
 
-[See workflows 13 & 14](.github/workflows)
+[See workflows 14 & 15](.github/workflows)
 
 ### Features
 

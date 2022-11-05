@@ -2,7 +2,7 @@
 
 A React project to understand how to use GitHub Actions.
 
-[See workflows 1 to 12](../../.github/workflows)
+[See workflows 1 to 13](../../.github/workflows)
 
 ## Features
 
@@ -18,5 +18,6 @@ A React project to understand how to use GitHub Actions.
 - running jobs and steps conditionally.
 - running jobs with a matrix.
 - re-using workflows.
+- grouping steps in a custom composite action.
 
 Based on [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).
