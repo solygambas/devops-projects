@@ -21,5 +21,6 @@ A React project to understand how to use GitHub Actions.
 - grouping steps in a custom composite action.
 - adding inputs and outputs to custom actions.
 - creating a custom JavaScript action.
+- creating a custom Docker action with Python.
 
 Based on [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).
