@@ -24,6 +24,6 @@ runs:
       id: install
       run: |
         npm ci
-        echo "cachet=${{ inputs.caching }}" >> $GITHUB_OUTPUT
+        echo "cache=${{ inputs.caching }}" >> $GITHUB_OUTPUT
       shell: bash
       working-directory: 01-react-project
