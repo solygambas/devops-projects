@@ -22,5 +22,6 @@ A React project to understand how to use GitHub Actions.
 - adding inputs and outputs to custom actions.
 - creating a custom JavaScript action.
 - creating a custom Docker action with Python.
+- working with third-party permissions and OpenID Connect.
 
 Based on [GitHub Actions - The Complete Guide](https://www.udemy.com/course/github-actions-the-complete-guide/) by Maximilian Schwarzmüller (2022).

@@ -60,6 +60,9 @@ jobs:
           name: dist-files
           path: 01-react-project/dist
   deploy:
+    # permissions:
+    #   id-token: write
+    #   contents: read
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -72,6 +75,11 @@ jobs:
           path: 01-react-project/dist
       - name: Output contents
         run: ls
+      # - name: Get permissions
+      #   uses: aws-actions/configure-aws-credentials@v1
+      #   with:
+      #     role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
+      #     aws-region: us-east-2
       - name: Deploy
         id: deploy
         # uses: ./.github/actions/deploy-javascript
