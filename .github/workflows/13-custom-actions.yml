@@ -82,8 +82,8 @@ jobs:
       #     aws-region: eu-west-3
       - name: Deploy
         id: deploy
-        uses: ./.github/actions/deploy-javascript
-        # uses: ./.github/actions/deploy-docker
+        # uses: ./.github/actions/deploy-javascript
+        uses: ./.github/actions/deploy-docker
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
