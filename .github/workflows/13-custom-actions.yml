@@ -79,16 +79,16 @@ jobs:
       #   uses: aws-actions/configure-aws-credentials@v1
       #   with:
       #     role-to-assume: arn:aws:iam::123456789100:role/my-github-actions-role
-      #     aws-region: us-east-2
+      #     aws-region: eu-west-3
       - name: Deploy
         id: deploy
-        # uses: ./.github/actions/deploy-javascript
-        uses: ./.github/actions/deploy-docker
-        # env:
-        #   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        #   AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
+        uses: ./.github/actions/deploy-javascript
+        # uses: ./.github/actions/deploy-docker
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
-          bucket: gha-custom-action-hosting
+          bucket: gha-custom-action
           dist-folder: 01-react-project/dist
       - name: Output information
         run: |

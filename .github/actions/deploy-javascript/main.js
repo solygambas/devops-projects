@@ -1,5 +1,5 @@
 const core = require("@actions/core");
-// const github = require("@actions/github");
+const github = require("@actions/github");
 const exec = require("@actions/exec");
 
 // CLI tools:https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md#cli-tools
@@ -16,9 +16,9 @@ function run() {
   //   github.getOctokit().
   //   github.context.
 
-  // upload files to S3
-  //   const s3Uri = `s3://${bucket}`;
-  //   exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --region ${bucketRegion}`);
+  // upload files to S3 - AWS CLI is pre-installed
+  const s3Uri = `s3://${bucket}`;
+  exec.exec(`aws s3 sync ${distFolder} ${s3Uri} --region ${bucketRegion}`);
 
   // display url
   const websiteUrl = `http://${bucket}.s3-website-${bucketRegion}.amazonaws.com`;
